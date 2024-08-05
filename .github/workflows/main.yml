@@ -1,6 +1,6 @@
   - name: Vercel Actions
   # You may pin to the exact commit or the version.
-  # uses: nexterias/actions-vercel@8105e682d635529a5aa77c44d131303c7a500e03
+  uses: nexterias/actions-vercel@8105e682d635529a5aa77c44d131303c7a500e03
   uses: nexterias/actions-vercel@v1.2.1
   with:
     # Vercel token: https://vercel.com/account/tokens
