@@ -19,8 +19,8 @@ function Rotas() {
                 <Route path="/Categoria" element={<Categoria></Categoria>}></Route>
                 <Route path="/Lista-Produtos" element={<ProductListingPage/>} ></Route>
                 <Route path="*" element={<NotDefault></NotDefault>} />
-                <Route path="/Cadastro" element={<Cadastro/>}></Route>
-                <Route path="/Login" element={<Login/>}></Route>
+                <Route path="/Cadastro" element={<Cadastro/>}/>
+                <Route path="/Login" element={<Login/>}/>
             </Routes>
             <Footer />
         </>

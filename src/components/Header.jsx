@@ -118,9 +118,10 @@ function Header() {
           </ul>
           <div className="flex flex-col items-center mt-64 gap-5 border-t-[1px] border-slate-500">
             {/* Botão de entrar */}
-            <button href={Login} className="px-4 py-2 w-36 bg-pink-500 text-white rounded mt-5">Entrar</button>
+            <button href={Login} className="px-4 py-2 w-36 bg-pink-500 text-white rounded mt-5">
+              <Link path="/Login" className='text-white'>Entrar</Link></button>
             {/* Link para cadastro */}
-            <a href={Cadastro} className="text-pink-500">Cadastre-se</a>
+            <a href={Cadastro} className="text-pink-500"><Link path="/Cadastro">Cadastre-se</Link></a>
           </div>
         </div>
       </div>
@@ -130,7 +131,7 @@ function Header() {
         <div className="space-x-4 hidden lg:block">
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/Home">Home</Link>
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/Lista-Produtos">Produtos</Link>
-          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="Categoria">Categorias</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="/Categoria">Categorias</Link>
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</Link>
         </div>
       </div>
