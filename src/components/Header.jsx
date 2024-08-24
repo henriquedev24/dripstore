@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../assets/logo.png';
 import { Cart, List, Search, X } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
+import Cadastro from '../pages/Cadastro';
+import Login from '../pages/Login'
 
 
 function Header() {
@@ -116,9 +118,9 @@ function Header() {
           </ul>
           <div className="flex flex-col items-center mt-64 gap-5 border-t-[1px] border-slate-500">
             {/* Botão de entrar */}
-            <button href="#" className="px-4 py-2 w-36 bg-pink-500 text-white rounded mt-5">Entrar</button>
+            <button href={Login} className="px-4 py-2 w-36 bg-pink-500 text-white rounded mt-5">Entrar</button>
             {/* Link para cadastro */}
-            <a href="#" className="text-pink-500">Cadastre-se</a>
+            <a href={Cadastro} className="text-pink-500">Cadastre-se</a>
           </div>
         </div>
       </div>

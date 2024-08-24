@@ -1,11 +1,12 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
-import Produto from "./Produtos";
 import Categoria from "./Categoria";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductListingPage from "./ProductListingPage";
 import NotDefault from "./NotFound";
+import Cadastro from '../pages/Cadastro'
+import Login from '../pages/Login'
 function Rotas() {
 
     return (
@@ -18,6 +19,8 @@ function Rotas() {
                 <Route path="/Categoria" element={<Categoria></Categoria>}></Route>
                 <Route path="/Lista-Produtos" element={<ProductListingPage/>} ></Route>
                 <Route path="*" element={<NotDefault></NotDefault>} />
+                <Route path="/Cadastro" element={<Cadastro/>}></Route>
+                <Route path="/Login" element={<Login/>}></Route>
             </Routes>
             <Footer />
         </>
